@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Art of Traveling</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
    
 </head>
@@ -24,27 +25,35 @@
     </header>
 
     <main>
-        <h1>About us</h1>
-       
-        <div class="about__usImg">
-            <img src="img/seoul-south_korea(ftZctPmXX3u).jpg" alt="">
-            <img src="img/venice-italy(AwOnGdv79ta).jpg" alt="">
-        </div>
-        <div class="aboutus__info">
-            <p>Our blog is written and driven by travellers for travellers. The Art of Traveling blog is dedicated to showing you 
-                the beautiful places our world has to offer. We don’t want your money, all we want is to inspire your travel dreams. 
-                Wether you’re planning your dream vacation or just fantasising about seeing the world once the pandemic is over, 
-                this blog is for you. We do our best to show our readers all the different sides of travel destinations across the globe. 
-                So if you want to travel to big cities, small towns, main stream vacation locations or tourist free places, you’ve come to 
-                the right place. Stick around, there’s no harm in dreaming about traveling and who knows, maybe you’ll find your dream destination.  </p>
-                
-                <h3>Discover the world,</h3>
-                <h2> The Art of Traveling.</h2>
+        <h1>Contact us</h1>
+        <div class="formh3">
+            <h3>We appreciate all our readers and would love to help out as best as we can. If you have a question about anything, please don't hesitate to contact us in the form below so we can help you achive your travel dreams.</h3>
         </div>
 
-       
-
-
+        <div class="form_bcg">
+            <div class="form_div">
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" />
+                    <p class="nameError">Please enter a name</p>
+    
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" />
+                    <p class="emailError">Please enter a valid email</p>
+    
+                    <label for="subject">Subject</label>
+                    <input type="text" name="subject" id="subject" />
+                    <p class="subjectError">Please enter a valid subject</p>
+                    
+                    <label for="content">Message</label>
+                    <input type="text" name="content" id="content" />
+                    <p class="contentError">Please enter a valid message</p>
+                    
+                    <button id="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+        
     </main>
 
     <footer>
@@ -63,8 +72,9 @@
             </div>
         </div>
     </footer>
-    <script src="js/archive.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/components/alert.js"></script>
+    <script src="js/form.js"></script>
+    
 
 
 </body>

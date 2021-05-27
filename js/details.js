@@ -11,20 +11,28 @@ const response = await fetch('https://projectexam.ntoni.tech/wp-json/wp/v2/posts
 const jsonResults = await response.json();
 const jsonArray = jsonResults;
 console.log (jsonResults);
+console.log (jsonArray.title.rendered);
 
 for (let i = 0; i < jsonArray.length; i++) {
-    document.title = jsonArray[i].title;
+    document.title = jsonArray[i].title.rendered;
     document.querySelector('main').innerHTML += `
-    <div class="archive__card">
+    <div class="post">
+    <h1>${jsonArray[i].title.rendered}</h1>
     <img class ="postImg" src="${jsonArray[i].fi_300x180}">
-  
-    </div>
-`; 
+    <p>${jsonArray[i].content.rendered}</p>
+</div>
+`;
 }
 } catch (error) {
-    console.log (error)
-}
+    console.log(error)
+    document.querySelector('.alert').innerHTML = showAlertTouser(
+        'error',
+        'danger'
+        );
+    }
 
-}
+};  
 
 getPosts();
+
+{/* <h1>${jsonArray[i].title.rendered}</h1> */}

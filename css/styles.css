@@ -1,7 +1,8 @@
 main {
-  width: 100%;
-  /* justify-content: center; */
+  width: 1200px;
+  justify-content: center;
   height: auto;
+  margin: auto;
 }
 
 body {
@@ -94,7 +95,7 @@ main h2 {
   position: absolute;
   display: flex;
   text-align: center;
-  margin-left: 600px;
+  margin-left: 550px;
 }
 
 .slick-next {
@@ -102,7 +103,7 @@ main h2 {
   border: none;
   font-size: 2rem;
   float: right;
-  margin-right: 600px;
+  margin-right: 550px;
   margin-top: 10.2px;
 }
 
@@ -141,11 +142,11 @@ main h4 {
   text-decoration-thickness: 0.3rem;
   display: flex;
   justify-content: center;
-  margin-top: -30px;
+  margin-top: -25px;
 }
 
 .index_info {
-  width: 600px;
+  width: 800px;
   text-align: center;
   margin: auto;
 }
@@ -157,6 +158,7 @@ main h4 {
   justify-content: center;
   font-size: 2rem;
   font-weight: 500;
+  margin-top: -10px;
 }
 
 .index_info p {
@@ -165,6 +167,7 @@ main h4 {
   display: inline-block;
   text-align: left;
   margin: auto;
+  font-size: 1.2rem;
 }
 
 .latest h3 {
@@ -286,8 +289,27 @@ main h4 {
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
+
+.view__more {
+  width: 150px;
+  height: 50px;
+  background-color: #d0d9fd;
+  display: flex;
+  margin: auto;
+  margin-top: 20px;
+}
+.view__more a {
+  color: black;
+  text-decoration: none;
+  font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Open Sans",
+    "Helvetica Neue", sans-serif;
+  font-size: 1.3rem;
+  margin-top: 8px;
+  margin-left: 25px;
+}
+
 .about__usImg {
-  margin-left: 170px;
+  margin-left: 250px;
 }
 .about__usImg img {
   width: 550px;
@@ -389,6 +411,56 @@ footer nav li a {
 footer nav li :hover {
   color: #707070;
 }
+
+.formh3 {
+  width: 800px;
+  text-align: center;
+  margin: auto;
+}
+
+.formh3 h3 {
+  font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Open Sans",
+    "Helvetica Neue", sans-serif;
+  display: inline-block;
+  text-align: center;
+  margin: auto;
+  font-size: 1.2rem;
+  margin-top: -5px;
+}
+
+.form_bcg {
+  margin-top: 40px;
+}
+
+.form_div {
+  margin: auto;
+  width: 800px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 200px;
+  background-color: #d0d9fd;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+form p {
+  color: red;
+  display: none;
+}
+
 @media (max-width: 1200px) {
   /*Desktop*/
 
@@ -621,6 +693,38 @@ footer nav li :hover {
   }
 }
 
-@media (max-width: 767px) {
+.about__usImg img {
+  width: 350px;
+}
+
+@media (max-width: 768px) {
   /*Mobile*/
+
+  header i {
+    font-size: 2rem;
+    color: transparent;
+  }
+  header li a {
+    text-decoration: none;
+    color: black;
+    font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Open Sans",
+      "Helvetica Neue", sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-left: 30px;
+  }
+
+  header nav li {
+    display: inline;
+    padding: 0px 15px;
+  }
+
+  nav {
+    margin-left: -80px;
+  }
+
+  header nav li a {
+    padding: 0%;
+    margin-left: 0px;
+  }
 }

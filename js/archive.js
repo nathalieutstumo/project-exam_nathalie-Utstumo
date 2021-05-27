@@ -6,7 +6,7 @@ async function getPosts() {
         const jsonArray = jsonObject;
         console.log('something', jsonArray);
 
-          for (let i = 0; i < 15; i++) {
+          for (let i = 0; i < 12; i++) {
 
               document.querySelector('.archive__cards').innerHTML += `
           <div class="archive__card">

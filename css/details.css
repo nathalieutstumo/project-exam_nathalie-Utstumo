@@ -1,7 +1,7 @@
 main {
-  width: 100%;
+  width: 1200px;
   /* justify-content: center; */
-  height: 400px;
+  height: auto;
 }
 
 body {
@@ -70,6 +70,10 @@ main h2 {
   justify-content: center;
   font-size: 2rem;
   font-weight: 500;
+}
+
+.blogpost {
+  width: 600px;
 }
 
 .postImg {
