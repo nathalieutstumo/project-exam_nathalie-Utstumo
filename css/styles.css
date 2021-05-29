@@ -416,6 +416,7 @@ footer nav li :hover {
   width: 800px;
   text-align: center;
   margin: auto;
+  margin-bottom: 40px;
 }
 
 .formh3 h3 {
@@ -430,6 +431,11 @@ footer nav li :hover {
 
 .form_bcg {
   margin-top: 40px;
+  height: 585px;
+  background-color: #d0d9fd;
+  width: 785px;
+  margin: auto;
+  margin-bottom: 50px;
 }
 
 .form_div {
@@ -438,14 +444,26 @@ footer nav li :hover {
   height: auto;
   display: flex;
   justify-content: center;
-  margin-bottom: 200px;
-  background-color: #d0d9fd;
 }
 
 form {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin-top: 30px;
+  font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Open Sans",
+    "Helvetica Neue", sans-serif;
+}
+
+input {
+  margin-bottom: 30px;
+}
+
+form input {
+  width: 400px;
+  height: 25px;
+  /* margin-top: 20px; */
+  border: none;
 }
 
 .hide {
@@ -459,6 +477,46 @@ form {
 form p {
   color: red;
   display: none;
+  margin-top: -25px;
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+textarea#content {
+  font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Open Sans",
+    "Helvetica Neue", sans-serif;
+  border: none;
+}
+
+button#submit {
+  margin-top: 25px;
+  height: 40px;
+  background-color: white;
+  border: none;
+  font-size: 1.2rem;
+  font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Open Sans",
+    "Helvetica Neue", sans-serif;
+}
+
+.wp-block-image {
+  display: none;
+}
+
+.detailsImg {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  width: 500px;
+  margin-bottom: 30px;
+}
+
+.post p {
+  font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Open Sans",
+    "Helvetica Neue", sans-serif;
+  font-size: 1rem;
+  width: 800px;
+  margin: auto;
+  margin-top: 15px;
 }
 
 @media (max-width: 1200px) {

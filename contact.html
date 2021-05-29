@@ -8,7 +8,17 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-   
+   <!-- Hotjar Tracking Code for http://projectexam.ntoni.tech/ -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:2427403,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
 </head>
 <body>
     <header>
@@ -34,19 +44,19 @@
             <div class="form_div">
                 <form>
                     <label for="name">Name</label>
-                    <input type="text" name="name" id="name" />
+                    <input type="text" name="name" id="name" placeholder="Full name" />
                     <p class="nameError">Please enter a name</p>
     
                     <label for="email">Email</label>
-                    <input type="text" name="email" id="email" />
+                    <input type="text" name="email" id="email" placeholder="Email" />
                     <p class="emailError">Please enter a valid email</p>
     
                     <label for="subject">Subject</label>
-                    <input type="text" name="subject" id="subject" />
+                    <input type="text" name="subject" id="subject" placeholder="Subject" />
                     <p class="subjectError">Please enter a valid subject</p>
                     
                     <label for="content">Message</label>
-                    <input type="text" name="content" id="content" />
+                    <textarea name="content" id="content" cols="25" rows="10" placeholder="Content"></textarea>
                     <p class="contentError">Please enter a valid message</p>
                     
                     <button id="submit">Submit</button>
