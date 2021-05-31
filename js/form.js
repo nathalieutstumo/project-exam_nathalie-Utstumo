@@ -13,7 +13,7 @@ submit.onclick = function (event) {
 	const name = document.querySelector('#name').value.trim();
     const email = document.querySelector('#email').value.trim();
     const subject = document.querySelector('#subject').value.trim();
-    const content = document.querySelector('textarea#content').value.trim();
+    const content = document.querySelector('#content').value.trim();
 
 	if (name.length > 5) {
 		nameError.classList.add('hide');

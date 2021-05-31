@@ -438,6 +438,10 @@ footer nav li :hover {
   margin-bottom: 50px;
 }
 
+p.contentError.show {
+  margin-top: 5px;
+}
+
 .form_div {
   margin: auto;
   width: 800px;
@@ -489,7 +493,7 @@ textarea#content {
 }
 
 button#submit {
-  margin-top: 25px;
+  margin-top: 15px;
   height: 40px;
   background-color: white;
   border: none;
