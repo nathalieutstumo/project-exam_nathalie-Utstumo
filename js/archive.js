@@ -1,14 +1,19 @@
-async function getPosts() {
+let offset = 0; // Det er vanlig at offset begynner med null.
+
+async function getPosts(per_page) {
     try {
-        const response = await fetch('https://projectexam.ntoni.tech/wp-json/wp/v2/posts?per_page=15');
-        const jsonObject = await response.json();
-        console.log(jsonObject);
-        const jsonArray = jsonObject;
-        console.log('something', jsonArray);
+      const response = await fetch('https://projectexam.ntoni.tech/wp-json/wp/v2/posts?per_page=' + per_page + '&offset=' + offset);
+      const jsonObject = await response.json();
+      console.log(jsonObject);
+      const jsonArray = jsonObject;
+      console.log('something', jsonArray);
 
-          for (let i = 0; i < jsonArray.length; i++) {
+      if (jsonArray.length === 0) {
+        alert("No more posts to load.");
+      }
 
-              document.querySelector('.archive__cards').innerHTML += `
+      for (let i = 0; i < jsonArray.length; i++) {
+        document.querySelector('.archive__cards').innerHTML += `
           <div class="archive__card">
               <img class ="postImg" src="${jsonArray[i].fi_300x180}">
               <h2>${jsonArray[i].title.rendered}</h2>
@@ -18,18 +23,17 @@ async function getPosts() {
               </div>
               <p></p>
           </div>
-      `;
-          }
-        } catch (error) {
-          // document.querySelector('main').innerHTML = showAlertTouser(
-          //     'error',
-          //     'danger') 
-          };
-  //   } finally {
-  //     setTimeout(function () {
-  //         document.querySelector('main').innerHTML = ' ';
-  //     }, 3000);
-  }
+        `;
+      }
+      offset += per_page; 
+    } catch (error) {
+      console.log(error);
+    };
+}
 
+getPosts(6); 
 
-getPosts();
+const button = document.querySelector('.view__more button');
+button.addEventListener('click', event => {
+  getPosts(3); 
+});
