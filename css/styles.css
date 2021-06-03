@@ -859,16 +859,17 @@ button#submit {
   }
 
   .about__usImg {
-    display: flex;
-    margin: auto;
+    margin-left: 55px;
   }
 
   .about__usImg img {
-    width: 207px;
+    width: 300px;
+    margin-bottom: 15px;
   }
 
   .aboutus__info {
     width: 355px;
+    margin-top: -20px;
   }
 
   .formh3 {
