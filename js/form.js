@@ -46,6 +46,9 @@ submit.onclick = function (event) {
         contentError.classList.add('show');
         contentError.classList.remove('hide'); 
     }
+   
+    
+    
 };
 
 function validateEmail(emailAdress) {
@@ -53,6 +56,9 @@ function validateEmail(emailAdress) {
     const isEmailValid = emailExpression.test(emailAdress);
     console.log(isEmailValid);
 	return isEmailValid;
-}
+};
+
+
+
 
 

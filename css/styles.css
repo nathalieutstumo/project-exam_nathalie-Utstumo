@@ -781,34 +781,47 @@ button#submit {
   width: 350px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   /*Mobile*/
+  header nav {
+    display: none;
+  }
+
+  .index_info {
+    width: fit-content;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  .some__icons {
+    margin: auto;
+    margin-right: 100px;
+  }
 
   header i {
-    font-size: 2rem;
-    color: transparent;
-  }
-  header li a {
-    text-decoration: none;
     color: black;
+  }
+
+  .mobilenav {
     font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Open Sans",
       "Helvetica Neue", sans-serif;
     font-weight: 500;
     font-size: 1.5rem;
-    margin-left: 30px;
+    text-align: center;
   }
 
-  header nav li {
-    display: inline;
-    padding: 0px 15px;
+  .mobilenav li a {
+    text-decoration: none;
+    color: black;
+    margin-right: 120px;
   }
 
-  nav {
-    margin-left: -80px;
-  }
-
-  header nav li a {
-    padding: 0%;
-    margin-left: 0px;
+  .mobilenav li {
+    list-style-type: none;
+    margin-top: 50px;
   }
 }
