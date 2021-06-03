@@ -824,4 +824,69 @@ button#submit {
     list-style-type: none;
     margin-top: 50px;
   }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer nav {
+    margin-top: -40px;
+  }
+  footer {
+    height: 180px;
+  }
+
+  .index__headlines h3 {
+    margin-top: 10px;
+  }
+
+  .latest {
+    margin-top: -40px;
+    margin-bottom: 30px;
+  }
+
+  .view__more {
+    margin-bottom: 25px;
+  }
+
+  .post p {
+    width: 380px;
+  }
+
+  .detailsImg {
+    width: 100%;
+  }
+
+  .about__usImg {
+    display: flex;
+    margin: auto;
+  }
+
+  .about__usImg img {
+    width: 207px;
+  }
+
+  .aboutus__info {
+    width: 355px;
+  }
+
+  .formh3 {
+    width: 380px;
+  }
+
+  .form_bcg {
+    width: 100%;
+  }
+
+  .form_div {
+    width: 100%;
+  }
+
+  form input {
+    width: 350px;
+    height: 25px;
+    /* margin-top: 20px; */
+    border: none;
+  }
 }
