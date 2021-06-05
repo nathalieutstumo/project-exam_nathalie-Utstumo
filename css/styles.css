@@ -290,24 +290,6 @@ main h4 {
   flex-wrap: wrap;
 }
 
-/* .view__more {
-  width: 150px;
-  height: 50px;
-  background-color: #d0d9fd;
-  display: flex;
-  margin: auto;
-  margin-top: 20px;
-}
-.view__more a {
-  color: black;
-  text-decoration: none;
-  font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Open Sans",
-    "Helvetica Neue", sans-serif;
-  font-size: 1.3rem;
-  margin-top: 8px;
-  margin-left: 25px;
-} */
-
 .about__usImg {
   margin-left: 250px;
 }
@@ -543,6 +525,13 @@ button#submit {
   text-align: center;
   justify-content: center;
   margin: auto;
+}
+
+.successMessage {
+  margin-top: 6px;
+  font-weight: 400;
+  font-size: 1rem;
+  color: black;
 }
 
 @media (max-width: 1200px) {
