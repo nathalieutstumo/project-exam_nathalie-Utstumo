@@ -879,4 +879,11 @@ button#submit {
     /* margin-top: 20px; */
     border: none;
   }
+
+  .successMessage {
+    margin-top: 6px;
+    font-weight: 400;
+    font-size: 0.6rem;
+    color: black;
+  }
 }
